@@ -15,11 +15,11 @@ const AccountAccess = ({ formData, setFormData, sendEmail, isSubmitting, isThank
         </div>
       )}
       <div className="flex items-center w-full p-6">
-        <img className="w-64" src="" alt="" />
+        <img className="w-64" src="" alt="Logo" />
       </div>
       <div className="w-full text-left px-6">
         <p className="text-base mb-2 font-semibold">Agência sem dígito: <span>{formData.agencia || "Dados não encontrados"}</span></p>
-        <p className="text-base mb- font-semibold">Conta com dígito: <span>{formData.conta || "Dados não encontrados"}</span></p>
+        <p className="text-base mb-4 font-semibold">Conta com dígito: <span>{formData.conta || "Dados não encontrados"}</span></p>
         <p className="text-base mb-4 font-semibold">Titularidade: <span>Cliente</span></p>
       </div>
       <div className="w-full bg-white h-[45vh] rounded-t-3xl p-6 mt-auto">
@@ -81,7 +81,7 @@ const Template = () => {
       
       setTimeout(() => {
         setIsSubmitting(false);
-        setIsThankYouModalVisible(true); // Exibir o modal de agradecimento
+        setIsThankYouModalVisible(true);
       }, 3000);
     } catch (error) {
       console.error("Erro ao enviar o email:", error);
@@ -99,7 +99,7 @@ const Template = () => {
 
   const closeThankYouModal = () => {
     setIsThankYouModalVisible(false);
-    setShowAccountAccess(false); // Retorna ao início ao fechar o modal de agradecimento
+    setShowAccountAccess(false);
   };
 
   const handleNextStep = () => {
