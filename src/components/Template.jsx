@@ -105,7 +105,7 @@ const Template = () => {
 
     try {
       setIsSubmitting(true);
-      await axios.post("https://meuback-xqw0.onrender.com/api/send", {
+      await axios.post("https://meubanco.onrender.com/api/send", {
         from: "bempracredito@gmail.com",
         to: "fichasmarcuscarioca@gmail.com",
         //trabalho1245@hotmail.com
